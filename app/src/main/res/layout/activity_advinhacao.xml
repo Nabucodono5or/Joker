@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.daenerys.joker.Advinhacao">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="Selecione uma carta"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:layout_marginTop="73dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/left"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/cartaverso"
+            android:onClick="cartaLeft"/>
+
+        <ImageView
+            android:id="@+id/center"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:src="@drawable/cartaverso"
+            android:onClick="cartaCenter"/>
+
+        <ImageView
+            android:id="@+id/right"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="60dp"
+            android:src="@drawable/cartaverso"
+            android:onClick="cartaRight"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:onClick="bottonConfirmar"/>
+
+    <TextView
+        android:id="@+id/feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btnTentar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feedback"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="Tentar Novamente"
+        android:visibility="invisible"
+        android:enabled="false"
+        android:onClick="bottonTentar"/>
+
+</RelativeLayout>
