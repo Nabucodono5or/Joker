@@ -7,7 +7,7 @@ Um simples jogo de cartas onde o usuário seleciona uma carta e confirmando sua 
 + API mínima SDK 25
 
 ## Instalação
-Basta transformar em apk.
+Basta transformar em apk.  
 Build → Build APK
 
 ## Detalhes
